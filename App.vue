@@ -2,7 +2,7 @@
   <header class="flex flex-col">
     <a href="#">
       <h1 class="text-right md:text-center py-4 px-6 md:py-8 text-6xl md:text-8xl text-puzzle">
-        Kre<br v-if="isMobile()">Atelier
+        Hacky<br v-if="isMobile()">Sack
       </h1>
     </a>
     <div class="header-image flex-grow"></div>
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import FooterComponent from '@/components/FooterComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 import NavigationComponent from './components/NavigationComponent.vue';
 
 const isMobile = () => window.innerWidth <= 768;

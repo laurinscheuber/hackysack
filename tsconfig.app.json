@@ -10,7 +10,6 @@
     },
     "allowJs": true,
     "checkJs": true,
-    "noImplicitAny": false,
-    "allowImportingTsExtensions": true,
+    "noImplicitAny": false
   }
 }
