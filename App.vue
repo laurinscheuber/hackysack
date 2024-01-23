@@ -16,8 +16,6 @@
 </template>
 
 <script setup lang="ts">
-import FooterComponent from './components/FooterComponent.vue';
-import NavigationComponent from './components/NavigationComponent.vue';
 
 const isMobile = () => window.innerWidth <= 768;
 </script>
