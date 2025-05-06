@@ -2,17 +2,17 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 bg-gradient-to-b from-white to-indigo-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
           About Hackysack
         </h1>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-700">
             What is Hackysack?
           </h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100">
             <p className="text-gray-700 mb-4">
               Hackysack, also known as footbag, is a small, round bag filled
               with beans, sand, or other materials that players use to perform
@@ -34,12 +34,14 @@ export default function AboutPage() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-700">
             History
           </h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100">
             <div className="mb-6">
-              <h3 className="text-xl font-medium mb-2">Origins</h3>
+              <h3 className="text-xl font-medium mb-2 text-indigo-600">
+                Origins
+              </h3>
               <p className="text-gray-700">
                 The modern hackysack (footbag) was invented in 1972 by Mike
                 Marshall and John Stalberger in Oregon, USA. Stalberger had been
@@ -50,7 +52,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mb-6">
-              <h3 className="text-xl font-medium mb-2">
+              <h3 className="text-xl font-medium mb-2 text-indigo-600">
                 Growth and Popularity
               </h3>
               <p className="text-gray-700">
@@ -63,7 +65,9 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-xl font-medium mb-2">Modern Day</h3>
+              <h3 className="text-xl font-medium mb-2 text-indigo-600">
+                Modern Day
+              </h3>
               <p className="text-gray-700">
                 Today, hackysack is enjoyed worldwide as both a casual activity
                 and a competitive sport. The World Footbag Championships are
@@ -76,45 +80,48 @@ export default function AboutPage() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-700">
             Basic Rules
           </h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100">
             <ul className="list-disc pl-5 space-y-4 text-gray-700">
               <li>
-                <strong>No Hands:</strong> The fundamental rule of hackysack is
-                that players cannot use their hands to touch the bag during
-                play. Only feet, knees, legs, chest, shoulders, and head are
-                allowed.
+                <strong className="text-indigo-600">No Hands:</strong> The
+                fundamental rule of hackysack is that players cannot use their
+                hands to touch the bag during play. Only feet, knees, legs,
+                chest, shoulders, and head are allowed.
               </li>
               <li>
-                <strong>Circle Etiquette:</strong> In a hacky circle, the bag
-                typically moves clockwise, and players should try to pass to the
-                person on their left after receiving it.
+                <strong className="text-indigo-600">Circle Etiquette:</strong>{" "}
+                In a hacky circle, the bag typically moves clockwise, and
+                players should try to pass to the person on their left after
+                receiving it.
               </li>
               <li>
-                <strong>Serve the Drop:</strong> If a player drops the bag, they
-                serve it back into play by kicking it to another player (not
-                themselves).
+                <strong className="text-indigo-600">Serve the Drop:</strong> If
+                a player drops the bag, they serve it back into play by kicking
+                it to another player (not themselves).
               </li>
               <li>
-                <strong>Respect the Circle:</strong> Maintain your position in
-                the circle and avoid reaching for shots meant for other players.
+                <strong className="text-indigo-600">Respect the Circle:</strong>{" "}
+                Maintain your position in the circle and avoid reaching for
+                shots meant for other players.
               </li>
               <li>
-                <strong>Cooperative Play:</strong> In casual play, the goal is
-                to keep the bag in motion as a group, not to show off individual
-                skills at the expense of others' participation.
+                <strong className="text-indigo-600">Cooperative Play:</strong>{" "}
+                In casual play, the goal is to keep the bag in motion as a
+                group, not to show off individual skills at the expense of
+                others' participation.
               </li>
             </ul>
           </div>
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">
+          <h2 className="text-2xl font-semibold mb-4 text-indigo-700">
             Equipment
           </h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100">
             <p className="text-gray-700 mb-4">
               A standard hackysack (footbag) is typically:
             </p>
@@ -130,19 +137,20 @@ export default function AboutPage() {
             </p>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
               <li>
-                <strong>Sand bags:</strong> Heavier and easier for beginners
+                <strong className="text-indigo-600">Sand bags:</strong> Heavier
+                and easier for beginners
               </li>
               <li>
-                <strong>Crocheted bags:</strong> Lightweight and ideal for
-                freestyle tricks
+                <strong className="text-indigo-600">Crocheted bags:</strong>{" "}
+                Lightweight and ideal for freestyle tricks
               </li>
               <li>
-                <strong>12-panel bags:</strong> Standard design for competitive
-                play
+                <strong className="text-indigo-600">12-panel bags:</strong>{" "}
+                Standard design for competitive play
               </li>
               <li>
-                <strong>14-panel bags:</strong> Provides better control for
-                advanced tricks
+                <strong className="text-indigo-600">14-panel bags:</strong>{" "}
+                Provides better control for advanced tricks
               </li>
             </ul>
           </div>

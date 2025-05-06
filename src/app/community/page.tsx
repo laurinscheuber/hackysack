@@ -99,9 +99,9 @@ export default function CommunityPage() {
   ];
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 bg-gradient-to-b from-white to-indigo-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
           Join Our Community
         </h1>
 
@@ -114,28 +114,31 @@ export default function CommunityPage() {
 
         {/* Events Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">
+          <h2 className="text-2xl font-semibold mb-6 text-indigo-700">
             Upcoming Events
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {upcomingEvents.map((event) => (
-              <div key={event.id} className="bg-white rounded-lg shadow-md p-6">
-                <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mb-3">
+              <div
+                key={event.id}
+                className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300"
+              >
+                <span className="inline-block bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-800 text-xs px-3 py-1 rounded-full mb-3 font-medium border border-indigo-200">
                   {event.date}
                 </span>
-                <h3 className="text-xl font-medium mb-2 text-gray-800">
+                <h3 className="text-xl font-medium mb-2 text-indigo-900">
                   {event.title}
                 </h3>
-                <p className="text-sm text-green-600 mb-3">{event.time}</p>
+                <p className="text-sm text-indigo-600 mb-3">{event.time}</p>
                 <p className="text-gray-600">{event.description}</p>
-                <button className="mt-4 text-green-600 font-medium hover:underline">
+                <button className="mt-4 text-indigo-600 font-medium hover:text-indigo-800 hover:underline transition-colors">
                   Learn more →
                 </button>
               </div>
             ))}
           </div>
           <div className="text-center mt-8">
-            <button className="inline-block bg-white border border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50">
+            <button className="inline-block bg-white border border-indigo-400 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors shadow-md">
               View All Events
             </button>
           </div>
@@ -143,22 +146,29 @@ export default function CommunityPage() {
 
         {/* Community Posts */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">
+          <h2 className="text-2xl font-semibold mb-6 text-indigo-700">
             Community Posts
           </h2>
           <div className="space-y-6">
             {communityPosts.map((post) => (
-              <div key={post.id} className="bg-white rounded-lg shadow-md p-6">
+              <div
+                key={post.id}
+                className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300"
+              >
                 <div className="flex items-center mb-4">
-                  <div className="h-10 w-10 rounded-full bg-gray-300 mr-3"></div>
+                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 mr-3 flex items-center justify-center text-white font-bold text-sm">
+                    {post.author.charAt(0)}
+                  </div>
                   <div>
-                    <h3 className="font-medium text-gray-800">{post.author}</h3>
+                    <h3 className="font-medium text-indigo-900">
+                      {post.author}
+                    </h3>
                     <p className="text-xs text-gray-500">{post.date}</p>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-4">{post.content}</p>
                 <div className="flex space-x-4 text-sm text-gray-500">
-                  <button className="flex items-center hover:text-green-600">
+                  <button className="flex items-center hover:text-indigo-600 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 mr-1"
@@ -175,7 +185,7 @@ export default function CommunityPage() {
                     </svg>
                     {post.likes} likes
                   </button>
-                  <button className="flex items-center hover:text-green-600">
+                  <button className="flex items-center hover:text-indigo-600 transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 mr-1"
@@ -197,15 +207,15 @@ export default function CommunityPage() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <button className="inline-block bg-white border border-green-600 text-green-600 px-6 py-3 rounded-lg font-medium hover:bg-green-50">
+            <button className="inline-block bg-white border border-indigo-400 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 transition-colors shadow-md">
               View All Posts
             </button>
           </div>
         </section>
 
         {/* Contact Form */}
-        <section className="bg-green-50 rounded-xl p-8">
-          <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">
+        <section className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 shadow-lg border border-indigo-100">
+          <h2 className="text-2xl font-semibold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
             Get in Touch
           </h2>
           <div className="max-w-2xl mx-auto">
@@ -215,14 +225,17 @@ export default function CommunityPage() {
             </p>
 
             {showSuccess && (
-              <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
+              <div className="bg-indigo-100 border border-indigo-300 text-indigo-700 px-4 py-3 rounded-lg mb-6">
                 <p>Thank you for your message! We'll get back to you soon.</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-700 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-indigo-700 mb-2 font-medium"
+                >
                   Your Name
                 </label>
                 <input
@@ -231,13 +244,16 @@ export default function CommunityPage() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 border border-indigo-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
                   required
                 />
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-indigo-700 mb-2 font-medium"
+                >
                   Email Address
                 </label>
                 <input
@@ -246,13 +262,16 @@ export default function CommunityPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 border border-indigo-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
                   required
                 />
               </div>
 
               <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-700 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-indigo-700 mb-2 font-medium"
+                >
                   Message
                 </label>
                 <textarea
@@ -261,7 +280,7 @@ export default function CommunityPage() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-4 py-2 border border-indigo-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
                   required
                 ></textarea>
               </div>
@@ -269,7 +288,7 @@ export default function CommunityPage() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700"
+                  className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-md"
                 >
                   Send Message
                 </button>

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function TechniquesPage() {
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-12 bg-gradient-to-b from-white to-indigo-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-violet-600">
           Hackysack Techniques
         </h1>
 
@@ -17,20 +17,20 @@ export default function TechniquesPage() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">
+          <h2 className="text-2xl font-semibold mb-6 text-indigo-700">
             For Beginners
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Inside Kick
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>
                     Stand with feet shoulder-width apart, knees slightly bent.
@@ -51,22 +51,22 @@ export default function TechniquesPage() {
                     Practice controlling the height and direction of your kicks.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: Focus on keeping your upper body relaxed and your
                   eyes on the hackysack at all times.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Outside Kick
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>Stand in a relaxed position with knees slightly bent.</li>
                   <li>
@@ -82,7 +82,7 @@ export default function TechniquesPage() {
                     so be patient.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: Practice transitioning between inside and outside
                   kicks to improve your control.
                 </p>
@@ -92,20 +92,20 @@ export default function TechniquesPage() {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">
+          <h2 className="text-2xl font-semibold mb-6 text-indigo-700">
             Intermediate Techniques
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Toe Stall
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>
                     Start by kicking the hackysack up with an inside kick.
@@ -121,22 +121,22 @@ export default function TechniquesPage() {
                     another player.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: Keep your core engaged to help maintain balance
                   during the stall.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Knee Kick
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>Kick the hackysack up from your foot as usual.</li>
                   <li>As the hackysack falls, lift your knee to meet it.</li>
@@ -152,7 +152,7 @@ export default function TechniquesPage() {
                     knee.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: For better control, try to hit the hackysack with the
                   area just above your kneecap.
                 </p>
@@ -162,20 +162,20 @@ export default function TechniquesPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">
+          <h2 className="text-2xl font-semibold mb-6 text-indigo-700">
             Advanced Tricks
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Flying Clipper
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>
                     Start with the hackysack on a toe stall on your preferred
@@ -194,22 +194,22 @@ export default function TechniquesPage() {
                     opposite foot on the other side.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: This trick requires significant practice. Start
                   slowly and focus on the fluid motion.
                 </p>
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300">
+              <h3 className="text-xl font-medium mb-3 text-indigo-900">
                 Butterfly
               </h3>
-              <div className="mb-4 h-48 bg-gray-200 rounded-md flex items-center justify-center">
-                <span className="text-gray-500">Technique Illustration</span>
+              <div className="mb-4 h-48 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center border border-indigo-200">
+                <span className="text-indigo-500">Technique Illustration</span>
               </div>
               <div>
-                <h4 className="font-medium mb-2">Steps:</h4>
+                <h4 className="font-medium mb-2 text-indigo-700">Steps:</h4>
                 <ol className="list-decimal pl-5 space-y-2 text-gray-700">
                   <li>Begin with an inside kick using your stronger foot.</li>
                   <li>
@@ -229,7 +229,7 @@ export default function TechniquesPage() {
                     motion.
                   </li>
                 </ol>
-                <p className="mt-4 text-gray-600 italic">
+                <p className="mt-4 text-indigo-600 italic">
                   Pro Tip: Focus on the timing of your spin to ensure you're in
                   position to catch the hackysack.
                 </p>
@@ -238,8 +238,8 @@ export default function TechniquesPage() {
           </div>
         </div>
 
-        <div className="mt-16 bg-green-50 rounded-xl p-8">
-          <h2 className="text-2xl font-semibold mb-4 text-center text-green-700">
+        <div className="mt-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl p-8 shadow-lg border border-indigo-200">
+          <h2 className="text-2xl font-semibold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
             Training Regimen
           </h2>
           <p className="text-gray-700 mb-6">
@@ -247,8 +247,8 @@ export default function TechniquesPage() {
             routine:
           </p>
           <div className="space-y-4">
-            <div className="bg-white p-4 rounded-md shadow-sm">
-              <h3 className="font-medium text-green-800 mb-2">
+            <div className="bg-white p-4 rounded-lg shadow-md border border-indigo-100">
+              <h3 className="font-medium text-indigo-700 mb-2">
                 Daily Practice (15-30 minutes)
               </h3>
               <ul className="list-disc pl-5 text-gray-700">
@@ -259,8 +259,8 @@ export default function TechniquesPage() {
               </ul>
             </div>
 
-            <div className="bg-white p-4 rounded-md shadow-sm">
-              <h3 className="font-medium text-green-800 mb-2">Weekly Goals</h3>
+            <div className="bg-white p-4 rounded-lg shadow-md border border-indigo-100">
+              <h3 className="font-medium text-indigo-700 mb-2">Weekly Goals</h3>
               <ul className="list-disc pl-5 text-gray-700">
                 <li>Learn one new move per week</li>
                 <li>
@@ -274,8 +274,8 @@ export default function TechniquesPage() {
               </ul>
             </div>
 
-            <div className="bg-white p-4 rounded-md shadow-sm">
-              <h3 className="font-medium text-green-800 mb-2">
+            <div className="bg-white p-4 rounded-lg shadow-md border border-indigo-100">
+              <h3 className="font-medium text-indigo-700 mb-2">
                 Tracking Progress
               </h3>
               <p className="text-gray-700">

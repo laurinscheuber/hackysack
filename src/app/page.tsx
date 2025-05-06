@@ -5,8 +5,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-green-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-violet-800 text-white py-20">
+        <div className="absolute inset-0 opacity-20 bg-[url('/grid-pattern.svg')] bg-repeat"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="md:flex md:items-center md:justify-between">
             <div className="md:w-1/2 space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold">
@@ -19,22 +20,22 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/techniques"
-                  className="inline-block bg-white text-green-700 px-6 py-3 rounded-lg font-medium shadow-md hover:bg-gray-100"
+                  className="inline-block bg-white text-indigo-700 px-6 py-3 rounded-lg font-medium shadow-md hover:bg-gray-100 transition-all duration-200"
                 >
                   Learn Techniques
                 </Link>
                 <Link
                   href="/videos"
-                  className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium border border-white hover:bg-green-800"
+                  className="inline-block bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium border border-indigo-300 hover:bg-indigo-600 transition-all duration-200"
                 >
                   Watch Videos
                 </Link>
               </div>
             </div>
             <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
-              <div className="w-64 h-64 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
+              <div className="w-64 h-64 bg-gradient-to-br from-blue-500 to-violet-500 rounded-full flex items-center justify-center shadow-xl">
                 {/* Replace with actual hackysack image */}
-                <div className="w-48 h-48 bg-green-800 rounded-full relative">
+                <div className="w-48 h-48 bg-indigo-600 rounded-full relative shadow-inner">
                   <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
                     Hackysack
                   </div>
@@ -43,18 +44,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white to-transparent"></div>
       </section>
 
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+          <h2 className="text-3xl font-bold text-center mb-12 text-indigo-900">
             Discover Hackysack
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-50">
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-violet-500 rounded-full flex items-center justify-center mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -70,21 +72,23 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">History & Rules</h3>
+              <h3 className="text-xl font-semibold mb-2 text-indigo-900">
+                History & Rules
+              </h3>
               <p className="text-gray-600">
                 Learn about the origins of hackysack and understand the official
                 rules of play.
               </p>
               <Link
                 href="/about"
-                className="mt-4 inline-block text-green-600 hover:underline"
+                className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium hover:underline"
               >
                 Learn more →
               </Link>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-50">
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-violet-500 rounded-full flex items-center justify-center mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -100,7 +104,7 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 text-indigo-900">
                 Techniques & Tricks
               </h3>
               <p className="text-gray-600">
@@ -109,14 +113,14 @@ export default function Home() {
               </p>
               <Link
                 href="/techniques"
-                className="mt-4 inline-block text-green-600 hover:underline"
+                className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium hover:underline"
               >
                 Learn more →
               </Link>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-indigo-50">
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-violet-500 rounded-full flex items-center justify-center mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -132,14 +136,16 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Training Videos</h3>
+              <h3 className="text-xl font-semibold mb-2 text-indigo-900">
+                Training Videos
+              </h3>
               <p className="text-gray-600">
                 Watch instructional videos from professional hackysack players
                 and coaches.
               </p>
               <Link
                 href="/videos"
-                className="mt-4 inline-block text-green-600 hover:underline"
+                className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium hover:underline"
               >
                 Learn more →
               </Link>
@@ -151,8 +157,8 @@ export default function Home() {
       {/* Community Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-green-50 rounded-xl p-8 md:p-12">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 md:p-12 shadow-lg border border-indigo-100">
+            <h2 className="text-3xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
               Join Our Community
             </h2>
             <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-8">
@@ -162,7 +168,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Link
                 href="/community"
-                className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700"
+                className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-md"
               >
                 Join Now
               </Link>
